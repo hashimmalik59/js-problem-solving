@@ -25,3 +25,26 @@ E-commerce checkout system ke liye dynamic data processing logic likhna.
 
 - JavaScript (ES6+)
 - Node.js
+
+## 02-array-transformation
+
+### Problem
+
+Product catalog ke liye tax calculation aur budget-friendly items ko filter karne ka logic implement karna.
+
+### Requirements
+
+1. **Tax Calculation:** `map()` ka use kar ke har item ki price mein 20% tax add karein.
+2. **Immutability:** Spread operator (`...`) ka use kar ke original data ko mutate kiye bina naya object banayein.
+3. **Filtering:** `filter()` ka use kar ke sirf 150 se kam price wale items ko return karein.
+
+### Algorithm
+
+1. **Transform Data:** `map()` ko call kar ke har element par function apply karein.
+2. **Apply Spread:** Object mein `...item` spread karein aur `price` ko nayi calculated value se overwrite karein.
+3. **Filter Data:** `filter()` mein condition `item.price < 150` pass kar ke relevant items extract karein.
+
+### Technologies
+
+- JavaScript (ES6+)
+- Node.js
